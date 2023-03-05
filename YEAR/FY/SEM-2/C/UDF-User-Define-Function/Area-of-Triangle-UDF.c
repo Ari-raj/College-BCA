@@ -16,7 +16,7 @@ float a,b,ans;
 clrscr();
 printf("enter height of triangle :");
 scanf("%f",&a);
-printf("enter breath of triangle :");
+printf("enter b of triangle :");
 scanf("%f",&b);
 ans=tarea(a,b);
 printf("area of triangle is %.1f",ans);
