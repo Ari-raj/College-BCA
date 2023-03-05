@@ -5,49 +5,59 @@
 #include<conio.h>
 void main()
 {
-int a[3][3],b[3][3],i,j,count=0;
+int a[3][3],b[3][3],i,j,c=0;
 clrscr();
-
 for(i=0;i<3;i++)
 {
 for(j=0;j<3;j++)
 {
-printf("enter element a[%d][%d]",i+1,j+1);
-scanf("%d",&a[i][j]);
+printf("enter a[%d][%d]:",i+1,j+1);
+scanf("%d,",&a[i][j]) ;
 }
 }
-//user input of a.
 for(i=0;i<3;i++)
 {
 for(j=0;j<3;j++)
 {
-printf("enter element b[%d][%d]",i+1,j+1);
-scanf("%d",&b[i][j]);
+printf("enter b[%d][%d]:",i+1,j+1);
+scanf("%d,",&b[i][j]) ;
 }
 }
-//user input of b.
 for(i=0;i<3;i++)
 {
 for(j=0;j<3;j++)
 {
-if(a[i][j] == b[i][j])
+if(a[i][j] != b[i][j])
 {
-continue;
+c=1;
+}
+}
+}
+if(c==0)
+{
+printf("its a equal matrix:\n");
 }
 else
 {
-count=1;
-break;
+printf("not a equal matrix:\n");
 }
-}
-}
-if (count==0)
+printf("a matrix :\n");
+for(i=0;i<3;i++)
 {
-printf("Equal MAtrix");
-}
-else
+for(j=0;j<3;j++)
 {
-printf("Not A Equal matrix");
+printf("%d\t",a[i][j]) ;
+}
+printf("\n");
+}
+printf("a matrix :\n");
+for(i=0;i<3;i++)
+{
+for(j=0;j<3;j++)
+{
+printf("%d\t",b[i][j]) ;
+}
+printf("\n");
 }
 getch();
 }
