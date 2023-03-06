@@ -2,19 +2,20 @@
 
 #include<stdio.h>
 #include<conio.h>
-float circler(float r)
+float circler(int r)
 {
-int ans;
-ans=2*r;
-return ans;
+float d,c,ar;
+d=2*r;
+c=2*3.13*r;
+ar=3.14*r*r;
+pintf("diameter =%f\nc=%f\narea=%f\n",d,c,ar);
 }
 int main()
 {
-int r,s;
+int r;
 clrscr();
 printf("enter r");
 scanf("%d",&r);
 ans=circler(r);
-printf("d=%d",ans);
 getch();
 }
