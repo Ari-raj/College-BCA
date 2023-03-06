@@ -8,7 +8,7 @@ float d,c,ar;
 d=2*r;
 c=2*3.13*r;
 ar=3.14*r*r;
-pintf("diameter =%f\nc=%f\narea=%f\n",d,c,ar);
+pintf("diameter =.1%f\nc=.1%f\narea=.1%f\n",d,c,ar);
 }
 int main()
 {
