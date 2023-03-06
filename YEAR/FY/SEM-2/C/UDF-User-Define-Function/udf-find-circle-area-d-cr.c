@@ -16,6 +16,6 @@ int r;
 clrscr();
 printf("enter r");
 scanf("%d",&r);
-ans=circler(r);
+circler(r);
 getch();
 }
