@@ -31,7 +31,7 @@ for(i=0;i<3;i++)
 csum=0;
 for(j=0;j<3;j++)
 {
-csum=csum+a[i][j];    //logic for sum of column...
+csum=csum+a[j][i];    //logic for sum of column...
 }
 printf("%d\t",csum);
 }
