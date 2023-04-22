@@ -19,7 +19,7 @@ void main()
 //user input of a 3*3 matrix.
 for(i=0;i<3;i++)
 {
-  for(j=0;j<3;j++)
+  for(j=i+1;j<3;j++)
 {
   if(i==j)
   if(a[i][j])
